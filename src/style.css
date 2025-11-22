@@ -3,24 +3,27 @@ body {
   margin: 0;
 }
 
-*{
+* {
   box-sizing: border-box;
 }
 
 .container {
   max-width: 1500px;
   margin: 0 auto;
+  /* border: 1px solid red; */
 }
 
 .content {
   width: 90%;
   margin: 0 auto;
+  /* border: 1px solid blue; */
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
 }
 
 .menu-icon {
@@ -70,16 +73,70 @@ body {
 .nav-right a {
   text-decoration: none;
   color: #FF3D17;
-  border: 1px solid #FF3D17;
+  /* border: 1px solid #FF3D17; */
   padding: 13px 23px;
   border-radius: 6px;
   font-weight: 600;
+}
+
+.banner {
+  height: 600px;
+  margin-top: 50px;
+  color: white;
+  background-image: url('./images/banner.jpg');
+  background-position: center;
+  object-fit: cover;
+  position: relative;
+  border-radius: 15px;
+}
+
+.banner-content {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  /* border: 1px solid yellowgreen; */
+  padding-left: 60px;
+}
+
+.banner-content h3 {
+  font-size: 60px;
+}
+
+.banner-link-btn {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+}
+
+.discover-btn {
+  text-decoration: none;
+  background-color: #FF3D17;
+  /* border: 1px solid #FF3D17; */
+  padding: 13px 23px;
+  border-radius: 6px;
+  font-weight: 600;
+  color: white;
+}
+
+.latest-btn {
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 13px 23px;
+  border-radius: 6px;
+  font-weight: 600;
+  color: white;
 }
 
 
 
 
 
+@media (min-width:801px) and (max-width:1439px) {
+  .banner {
+    background-size: 100% 100%;
+  }
+}
 
 
 
@@ -94,9 +151,21 @@ body {
     display: none;
   }
 
+  .banner {
+    height: 400px;
+    background-size: 100% 100%;
+  }
+
+  .banner-content {
+    width: 100%;
+    padding-left: 40px;
+  }
+
+  .banner-content h3 {
+    font-size: 40px;
+  }
+
 }
-
-
 
 
 
@@ -119,5 +188,27 @@ body {
 
   .nav-logo p {
     font-size: 14px;
+  }
+
+  .banner {
+    height: 350px;
+    object-fit: cover;
+    margin-top: 30px;
+  }
+
+  .banner-content h3 {
+    font-size: 28px;
+  }
+
+  .banner-link-btn {
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 7px;
+  }
+
+  .banner-content {
+    padding-left: 0px;
+    padding-inline: 20px;
+    text-align: center;
   }
 }
