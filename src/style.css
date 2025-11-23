@@ -1,22 +1,26 @@
 body {
   background-color: white;
-  margin: 0;
 }
 
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 .container {
   max-width: 1500px;
   margin: 0 auto;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 .content {
   width: 90%;
   margin: 0 auto;
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
+}
+
+.margin-top {
+  margin-top: 180px;
 }
 
 .navbar {
@@ -50,6 +54,11 @@ body {
 
 .nav-logo {
   width: 100px;
+  cursor: pointer;
+}
+
+.nav-logo:hover p {
+  color: #FF3D17;
 }
 
 .nav-logo img {
@@ -58,7 +67,6 @@ body {
 
 .nav-logo p {
   font-size: 20px;
-  margin-top: 0;
   margin-bottom: 0;
   text-align: center;
   font-weight: 600;
@@ -79,7 +87,7 @@ body {
   font-weight: 600;
 }
 
-.nav-right a:hover{
+.nav-right a:hover {
   background-color: #FF3D17;
   color: white;
 }
@@ -95,12 +103,15 @@ body {
   border-radius: 15px;
 }
 
+.banner-title {
+  margin-top: 25px;
+}
+
 .banner-content {
   width: 50%;
   height: 100%;
   display: flex;
   align-items: center;
-  /* border: 1px solid yellowgreen; */
   padding-left: 60px;
 }
 
@@ -123,7 +134,8 @@ body {
   font-weight: 600;
   color: white;
 }
-.discover-btn:hover{
+
+.discover-btn:hover {
   background-color: transparent;
   border: 1px solid #FF3D17;
   color: #FF3D17;
@@ -137,10 +149,52 @@ body {
   font-weight: 600;
   color: white;
 }
-.latest-btn:hover{
+
+.latest-btn:hover {
   color: #FF3D17;
-  border:1px solid #FF3D17;
+  border: 1px solid #FF3D17;
 }
+
+.service-content {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.service-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.service-card {
+  flex: 30%;
+  width: 360px;
+  height: 400px;
+  border: 1px solid #ccc8c8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 13px;
+  border-radius: 12px;
+}
+
+.service-card-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.service-card-heading {
+  font-size: 25px;
+}
+
+
+
+
 
 
 
@@ -150,8 +204,11 @@ body {
   .banner {
     background-size: 100% 100%;
   }
-}
 
+  .service-card {
+    height: 300px;
+  }
+}
 
 
 
@@ -177,6 +234,11 @@ body {
 
   .banner-content h3 {
     font-size: 40px;
+  }
+
+  .service-card {
+    flex: 45%;
+    height: 350px;
   }
 
 }
@@ -224,5 +286,9 @@ body {
     padding-left: 0px;
     padding-inline: 20px;
     text-align: center;
+  }
+
+  .service-card {
+    flex: 100%;
   }
 }
