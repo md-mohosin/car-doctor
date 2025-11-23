@@ -60,7 +60,7 @@ body {
   cursor: pointer;
 }
 
-.nav-logo:hover p {
+.nav-logo:hover p, .footer-logo:hover p {
   color: #FF3D17;
 }
 
@@ -194,6 +194,8 @@ body {
   gap: 30px;
   padding: 13px;
   border-radius: 12px;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 .service-card-img {
@@ -205,6 +207,10 @@ body {
 
 .service-card-heading {
   font-size: 25px;
+}
+
+.service-card:hover,.product-card:hover{
+  transform: scale(1.05);
 }
 
 .contact-us {
@@ -241,6 +247,8 @@ body {
   border: 1px solid rgb(213, 211, 211);
   padding: 10px;
   border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 .product-card-img {
