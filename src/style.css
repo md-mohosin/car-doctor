@@ -10,18 +10,19 @@ body {
 .container {
   max-width: 1500px;
   margin: 0 auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .content {
   width: 90%;
   margin: 0 auto;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 .margin-top {
   margin-top: 180px;
 }
+
 
 .navbar {
   display: flex;
@@ -192,6 +193,20 @@ body {
   font-size: 25px;
 }
 
+.contact-us {
+  background-color: black;
+  color: white;
+  height: 220px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact-card h4 {
+  font-size: 25px;
+}
+
 
 
 
@@ -239,6 +254,16 @@ body {
   .service-card {
     flex: 45%;
     height: 350px;
+  }
+
+   .contact-us {
+    flex-wrap: wrap;
+    padding: 20px;
+    height: 400px;
+  }
+
+  .contact-card h4 {
+    font-size: 20px;
   }
 
 }
@@ -290,5 +315,16 @@ body {
 
   .service-card {
     flex: 100%;
+  }
+
+  .contact-us {
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+    height: 400px;
+  }
+
+  .contact-card h4 {
+    font-size: 20px;
   }
 }
