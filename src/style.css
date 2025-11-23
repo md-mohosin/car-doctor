@@ -73,10 +73,15 @@ body {
 .nav-right a {
   text-decoration: none;
   color: #FF3D17;
-  /* border: 1px solid #FF3D17; */
+  border: 1px solid #FF3D17;
   padding: 13px 23px;
   border-radius: 6px;
   font-weight: 600;
+}
+
+.nav-right a:hover{
+  background-color: #FF3D17;
+  color: white;
 }
 
 .banner {
@@ -112,11 +117,16 @@ body {
 .discover-btn {
   text-decoration: none;
   background-color: #FF3D17;
-  /* border: 1px solid #FF3D17; */
+  border: 1px solid #FF3D17;
   padding: 13px 23px;
   border-radius: 6px;
   font-weight: 600;
   color: white;
+}
+.discover-btn:hover{
+  background-color: transparent;
+  border: 1px solid #FF3D17;
+  color: #FF3D17;
 }
 
 .latest-btn {
@@ -126,6 +136,10 @@ body {
   border-radius: 6px;
   font-weight: 600;
   color: white;
+}
+.latest-btn:hover{
+  color: #FF3D17;
+  border:1px solid #FF3D17;
 }
 
 
