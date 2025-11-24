@@ -104,7 +104,9 @@ body {
   height: 600px;
   margin-top: 50px;
   color: white;
-  background-image: url('./images/banner.jpg');
+  background:
+    linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url('./images/banner.jpg');
   background-position: center;
   object-fit: cover;
   position: relative;
@@ -606,7 +608,7 @@ body {
     flex: 100%;
   }
 
-  .product-card-img{
+  .product-card-img {
     height: 180px;
   }
 
